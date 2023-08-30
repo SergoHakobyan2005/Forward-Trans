@@ -1,0 +1,335 @@
+@import 'vars.scss';
+@import 'breakpoints.scss';
+
+.site-background {
+    @include lg-u {
+        position: absolute;
+    }
+}
+
+.parallax-video {
+    @include xxxl-u {
+        width: 100%;
+    }
+}
+
+#site-header {
+    @include lg {
+        gap: 85px;
+        justify-content: space-between;
+    }
+
+    @include lg-u {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    @include ex-u {
+        padding: 9px 30px 9px 20px;
+    }
+}
+
+.logo-block img {
+    @include lg {
+        width: 135px;
+    }
+}
+
+nav {
+    @include lg-u {
+        display: none;
+    }
+}
+
+.burger {
+    @include lg-u {
+        display: flex;
+    }
+}
+
+nav ul li {
+    @include lg {
+        font-size: 15px;
+    }
+}
+
+#section-1, #section-4 {
+    @include lg-u {
+        padding: 30px 20px;
+    }
+    
+    @include ex2-u {
+        padding: 30px 45px;
+    }
+
+    @include xs-u {
+        padding: 30px 35px;
+    }
+}
+
+#section-2 {
+    @include lg-u {
+        flex-direction: column;
+        gap: 50px;
+        padding: 80px 30px;
+    }
+
+    @include ex2-u {
+        padding: 60px 30px;
+    }
+
+    @include sm-u {
+        gap: 0;
+    }
+}
+
+#section-2 .image-part img {
+    @include lg-u {
+        width: 450px;
+        height: 250px;
+    }
+
+    @include ex2-u {
+        width: 330px;
+        height: 180px;
+    }
+}
+
+#section-3 {
+    @include lg-u {
+        padding: 70px 35px;
+    }
+
+    @include ex2-u {
+        padding: 60px 35px;
+    }
+}
+
+#section-3 .service-list svg {
+    @include md-u {
+        margin-bottom: 10px;
+    }
+}
+
+#section-4 .container {
+    @include xl-u {
+        gap: 45px;
+    }
+}
+
+#section-4 .container .text-block {
+    @include xl-u {
+        min-width: auto;
+    }
+
+    @include ex2-u {
+        width: auto;
+    }
+}
+
+#section-1 .container, #section-4 .container {
+    @include ex-u {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @include ex2-u {
+        justify-content: start;
+        text-align: start;
+        gap: 35px;
+    }
+}
+
+#section-1 .container .text-block, #section-4 .container .text-block {
+    @include ex2-u {
+        width: 100%;
+        max-width: initial;
+    }
+}
+
+#section-1 .container #line {
+    @include ex2-u {
+        display: none;
+    }
+}
+
+#section-1 .container .line2 {
+    @include ex-u {
+        display: none;
+    }
+}
+
+#section-4 #line {
+    @include ex-u {
+        display: none;
+    }
+}
+
+footer .top-floor {
+    @include lg-u {
+        padding: 45px 35px 35px 35px;
+        gap: 90px;
+    }
+
+    @include ex-u {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    @include sm-u {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center !important;
+        gap: 45px;
+    }
+
+    @include xs-u {
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start !important;
+        gap: 45px;
+        padding: 45px 35px 15px 35px;
+    }
+}
+
+footer .top-floor div {
+    @include ex-u {
+        text-align: center;
+    }
+
+    @include xs-u {
+        text-align: start;
+    }
+}
+
+footer .top-floor .section-title-1 {
+    @include ex-u {
+        max-width: initial;
+        justify-content: center;
+    }
+}
+
+footer .top-floor .section-text-1 {
+    @include ex-u {
+        max-width: 210px;
+        margin-bottom: 45px;
+    }
+
+    @include xs-u {
+        max-width: initial;
+        margin-bottom: 30px;
+    }
+}
+
+footer .top-floor .block-3 .section-text-1 {
+    @include xs {
+        margin-bottom: 10px;
+    }
+}
+
+footer .top-floor .icon-block {
+    @include ex-u {
+        justify-content: center;
+    }
+
+    @include xs-u {
+        justify-content: start;
+    }
+}
+
+.container-aboutus .content {
+    @include sm-u {
+        padding: 70px 35px;
+    }
+}
+
+.title, .content-title {
+    @include sm-u {
+        width: auto !important;
+        font-size: 22px !important;
+    }
+}
+
+.container-aboutus .content .content-title {
+    @include sm-u {
+        margin-bottom: 30px;
+    }
+}
+
+.container-aboutus .text {
+    @include sm-u {
+        margin-bottom: 0 !important;
+    }
+}
+
+.text {
+    @include sm-u {
+        width: auto !important;
+        margin-bottom: 55px !important;
+    }
+
+    @include sm-u {
+        font-size: 15px !important;
+    }
+}
+
+footer .ground-floor {
+    @include xs-u {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+.mob-menu {
+    @include ex2-u {
+        width: 100%;
+    }
+}
+
+.mob-menu .close-block .mobile-logo {
+    @include ex2-u {
+        display: block;
+        width: 120px;
+    }
+}
+
+.mob-menu .close-block {
+    @include ex2-u {
+        justify-content: space-between;
+    }
+}
+
+.container-contacts #contacts .text-part {
+    @include ex-u {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+.container-services #services .service-list-2 {
+    @include sm-u {
+        padding: 60px 25px;
+    }
+}
+
+.container-services #services .service-list-2 .colums {
+    @include xxl-u {
+        width: 400px;
+        min-width: 20%;
+    }
+}
+
+.container-services #services .service-list-2 .text {
+    @include sm-u {
+        margin-bottom: auto !important;
+    }
+}
+
+.container-services #services .service-list-2 img {
+    @include xs-u {
+        width: 70px;
+    }
+}
